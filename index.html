@@ -11,11 +11,13 @@
     }
 
     const pid = getParameterByName('id')
+    const layout = getParameterByName('layout')
+    const pos = getParameterByName('position')
     console.log(pid)
     window.uneeqInteractionsOptions = {
         personaShareId: pid,
-        layoutMode: 'fullScreen',
-        position: 'center',
+        layoutMode: layout||'fullScreen',
+        position: pos||'center',
         displayCallToAction: true,
         renderContent: true,
         playWelcome: false,
