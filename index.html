@@ -13,6 +13,7 @@
     const pid = getParameterByName('id')
     const layout = getParameterByName('layout')
     const pos = getParameterByName('position')
+    const camPos = getParameterByName('cameraposition')
     console.log(pid)
     window.uneeqInteractionsOptions = {
         personaShareId: pid,
@@ -23,6 +24,7 @@
         playWelcome: false,
         enableMicrophone: false,
         showUserInputInterface: true,
+        cameraPosition:camPos.toUpperCase() || "CENTER"
     }
 </script>
 <script src="https://hosted.us.uneeq.io/interactions/v1/deploy"></script>
