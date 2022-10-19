@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <style type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"></style>
 <script>
     function getParameterByName(name, url = window.location.href) {
         name = name.replace(/[\[\]]/g, '\\$&');
@@ -14,7 +15,6 @@
     const layout = getParameterByName('layout')
     const pos = getParameterByName('position')
     const camPos = getParameterByName('cameraposition')
-    console.log(pid)
     window.uneeqInteractionsOptions = {
         personaShareId: pid,
         layoutMode: layout || 'fullScreen',
