@@ -17,14 +17,15 @@
     console.log(pid)
     window.uneeqInteractionsOptions = {
         personaShareId: pid,
-        layoutMode: layout||'fullScreen',
-        position: pos||'center',
+        layoutMode: layout || 'fullScreen',
+        position: pos || 'center',
         displayCallToAction: true,
         renderContent: true,
         playWelcome: false,
         enableMicrophone: false,
         showUserInputInterface: true,
-        cameraPosition:camPos.toUpperCase() || "CENTER"
+        cameraPosition:camPos.toUpperCase() || "CENTER",
+        customStyles: `h1 { font-size: 150%; }`
     }
 </script>
 <script src="https://hosted.us.uneeq.io/interactions/v1/deploy"></script>
