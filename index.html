@@ -1,8 +1,14 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"></style>
-<script>
+  <title>Digital Human demo for Insurance Pre-qualification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
     function getParameterByName(name, url = window.location.href) {
         name = name.replace(/[\[\]]/g, '\\$&');
         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -51,11 +57,25 @@
 </script>
 <script src="https://hosted.us.uneeq.io/interactions/v1/deploy"></script>
 </head>
-
 <body>
 
 <div class="container">
   <h2>Digital Human demo for Insurance Pre-qualification</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Name:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter name" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Date of Birth:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter date of birth" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Zip Code:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter zip code" name="pwd">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
 </div>
 
 </body>
